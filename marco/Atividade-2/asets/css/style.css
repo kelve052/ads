@@ -1,0 +1,151 @@
+:root {
+    --roxo: #2c1e55;
+    --cinza: #c9c9c9;
+    --azul: #0092ff;
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(184deg, #2c1e55c9 28%, rgba(0, 0, 0, 0.945) 95%), url("/asets/images/backgeround.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 64px;
+}
+
+#div-logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+
+#logo {
+    width: 100px;
+}
+
+.nav {
+    display: flex;
+    gap: 32px;
+}
+
+.links-nav {
+    color: var(--branco);
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 2px solid transparent;
+}
+.links-nav:hover{
+    text-shadow: var(--azul) 0 0 5px;
+    border-bottom: 2px solid var(--azul);
+    transition: 0.2s;
+}
+#div-icones {
+    display: flex;
+    gap: 32px;
+}
+#div-icones img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+
+
+/* main */
+
+main {
+    margin: 0 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-top: 250px;
+    color: var(--branco);
+    text-shadow: var(--azul) 0px 0px 10px;
+    font-size: 64px;
+    max-width: 450px;
+}
+
+#paragrafo {
+    color: var(--branco);
+    max-width: 470px;
+    margin: 16px 0;
+}
+
+.button {
+    width: 200px;
+    height: 46px;
+    border: none;
+    border-radius: 12px;
+    margin-right: 12px;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 10px var(--azul);
+    cursor: pointer;
+    text-shadow: var(--azul) 0px 0px 10px;
+    transition: 0.2s;
+    border: solid var(--azul) 1px;
+}
+
+#button-buy {
+    background-color: var(--branco);
+    color: black;
+}
+
+#button-play {
+    background-color: black;
+    color: var(--branco);
+    border: 1px var(--branco) solid;
+}
+#button-play:hover{
+    border: solid var(--azul) 1px;
+}
+
+#logos-marcas {
+    margin-top: 12px;
+}
+
+#baner {
+    width: 800px;
+    margin-right: 100px;
+    animation: animacao infinite ease-in 15s;
+    transition: 2s;
+}
+
+#baner:hover {
+    transition: 5s;
+    transform: scale(1.1);
+    /* filter: drop-shadow(var(--azul) 0 0 10px); */
+}
+
+
+@keyframes animacao{
+    0%{
+        filter: drop-shadow(transparent 0 0 10px);
+    }
+    30%{
+        filter: drop-shadow(var(--azul) 0 0 20px);
+    }
+    80%{
+        filter: drop-shadow(#FFF 0 0 10px);
+    }
+    100%{
+        filter: drop-shadow(transparent 0 0 10px);
+    }
+}
