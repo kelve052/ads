@@ -64,5 +64,5 @@ public class ErpCompras {
     this.data_lancamento = data_lancamento;
   }
 
-  
+
 }
