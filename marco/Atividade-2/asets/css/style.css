@@ -134,6 +134,11 @@ h1 {
     /* filter: drop-shadow(var(--azul) 0 0 10px); */
 }
 
+#logos-marcas{
+    width: 444px;
+    height: 36px;
+}
+
 
 @keyframes animacao{
     0%{
