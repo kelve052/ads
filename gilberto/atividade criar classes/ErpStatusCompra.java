@@ -1,11 +1,6 @@
-import java.util.*;
-import java.sql.Time;
-import java.time.LocalDateTime;
-import java.math.BigDecimal;
 import java.sql.Timestamp;
-import java.util.Date;
 
-class ErpStatusCompra {
+public class ErpStatusCompra {
     private int id;
     private String name;
     private String description;
@@ -19,4 +14,44 @@ class ErpStatusCompra {
         this.active = active;
         this.dataLancamento = dataLancamento;
     }
-  }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public char getActive() {
+        return active;
+    }
+
+    public void setActive(char active) {
+        this.active = active;
+    }
+
+    public Timestamp getDataLancamento() {
+        return dataLancamento;
+    }
+
+    public void setDataLancamento(Timestamp dataLancamento) {
+        this.dataLancamento = dataLancamento;
+    }
+}

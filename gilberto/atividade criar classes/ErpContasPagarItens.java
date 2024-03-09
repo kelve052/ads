@@ -1,38 +1,57 @@
-import java.util.*;
-import java.sql.Time;
-import java.time.LocalDateTime;
-import java.math.BigDecimal;
-import java.sql.Timestamp;
 import java.util.Date;
 
-class ErpContasPagarItens {
+public class ErpContasPagarItens {
     private int id;
     private String descricao;
     private double valor;
     private int erpContasPagarId; // class
     private Date lancamento;
-  
+
     public ErpContasPagarItens(int id, String descricao, double valor, int erpContasPagarId, Date lancamento) {
-      this.id = id;
-      this.descricao = descricao;
-      this.valor = valor;
-      this.erpContasPagarId = erpContasPagarId;
-      this.lancamento = lancamento;
+        this.id = id;
+        this.descricao = descricao;
+        this.valor = valor;
+        this.erpContasPagarId = erpContasPagarId;
+        this.lancamento = lancamento;
     }
 
-    public String getErpContasPagarItens() {
-      return "Id: " + id + "\n" +
-             "Descrição: " + descricao + "\n" +
-             "Valor: " + valor + "\n" +
-             "ID do Contas a Pagar: " + erpContasPagarId + "\n" +
-             "Lançamento: " + lancamento;
-  }
+    public int getId() {
+        return id;
+    }
 
-  public void setErpContasPagarItens(int id, String descricao, double valor, int erpContasPagarId, Date lancamento) {
-      this.id = id;
-      this.descricao = descricao;
-      this.valor = valor;
-      this.erpContasPagarId = erpContasPagarId;
-      this.lancamento = lancamento;
-  }
-  }
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public int getErpContasPagarId() {
+        return erpContasPagarId;
+    }
+
+    public void setErpContasPagarId(int erpContasPagarId) {
+        this.erpContasPagarId = erpContasPagarId;
+    }
+
+    public Date getLancamento() {
+        return lancamento;
+    }
+
+    public void setLancamento(Date lancamento) {
+        this.lancamento = lancamento;
+    }
+}

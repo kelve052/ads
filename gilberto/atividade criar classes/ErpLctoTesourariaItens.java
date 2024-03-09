@@ -1,11 +1,6 @@
-import java.util.*;
-import java.sql.Time;
-import java.time.LocalDateTime;
-import java.math.BigDecimal;
 import java.sql.Timestamp;
-import java.util.Date;
 
-class ErpLctoTesourariaItens {
+public class ErpLctoTesourariaItens {
     private int id;
     private int erpLctoTesourariaId;
     private double valor;
@@ -17,6 +12,46 @@ class ErpLctoTesourariaItens {
         this.erpLctoTesourariaId = erpLctoTesourariaId;
         this.valor = valor;
         this.systemUnitId = systemUnitId;
+        this.datetime = datetime;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getErpLctoTesourariaId() {
+        return erpLctoTesourariaId;
+    }
+
+    public void setErpLctoTesourariaId(int erpLctoTesourariaId) {
+        this.erpLctoTesourariaId = erpLctoTesourariaId;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public int getSystemUnitId() {
+        return systemUnitId;
+    }
+
+    public void setSystemUnitId(int systemUnitId) {
+        this.systemUnitId = systemUnitId;
+    }
+
+    public Timestamp getDatetime() {
+        return datetime;
+    }
+
+    public void setDatetime(Timestamp datetime) {
         this.datetime = datetime;
     }
 }

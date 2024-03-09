@@ -1,4 +1,4 @@
-class SystemUnit {
+public class SystemUnit {
     private int id;
     private int code;
     private String name;
@@ -12,7 +12,7 @@ class SystemUnit {
     private String email;
     private char active;
     private String customCode;
-  
+
     public SystemUnit(int id, int code, String name, String connectionName, String addressZone, String addressStreet, String addressNumber, String addressDistrict, int ibgeMunicipioId, String telephone, String email, char active, String customCode) {
         this.id = id;
         this.code = code;
@@ -29,36 +29,107 @@ class SystemUnit {
         this.customCode = customCode;
     }
 
-    public String getAllFields() {
-        return "Id: " + id + "\n" +
-               "Code: " + code + "\n" +
-               "Name: " + name + "\n" +
-               "Connection Name: " + connectionName + "\n" +
-               "Address Zone: " + addressZone + "\n" +
-               "Address Street: " + addressStreet + "\n" +
-               "Address Number: " + addressNumber + "\n" +
-               "Address District: " + addressDistrict + "\n" +
-               "IBGE Municipio Id: " + ibgeMunicipioId + "\n" +
-               "Telephone: " + telephone + "\n" +
-               "Email: " + email + "\n" +
-               "Active: " + active + "\n" +
-               "Custom Code: " + customCode;
+    public int getId() {
+        return id;
     }
 
-    public void setAllFields(int id, int code, String name, String connectionName, String addressZone, String addressStreet, String addressNumber, String addressDistrict, int ibgeMunicipioId, String telephone, String email, char active, String customCode) {
+    public void setId(int id) {
         this.id = id;
+    }
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
         this.code = code;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
+    }
+
+    public String getConnectionName() {
+        return connectionName;
+    }
+
+    public void setConnectionName(String connectionName) {
         this.connectionName = connectionName;
+    }
+
+    public String getAddressZone() {
+        return addressZone;
+    }
+
+    public void setAddressZone(String addressZone) {
         this.addressZone = addressZone;
+    }
+
+    public String getAddressStreet() {
+        return addressStreet;
+    }
+
+    public void setAddressStreet(String addressStreet) {
         this.addressStreet = addressStreet;
+    }
+
+    public String getAddressNumber() {
+        return addressNumber;
+    }
+
+    public void setAddressNumber(String addressNumber) {
         this.addressNumber = addressNumber;
+    }
+
+    public String getAddressDistrict() {
+        return addressDistrict;
+    }
+
+    public void setAddressDistrict(String addressDistrict) {
         this.addressDistrict = addressDistrict;
+    }
+
+    public int getIbgeMunicipioId() {
+        return ibgeMunicipioId;
+    }
+
+    public void setIbgeMunicipioId(int ibgeMunicipioId) {
         this.ibgeMunicipioId = ibgeMunicipioId;
+    }
+
+    public String getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(String telephone) {
         this.telephone = telephone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
         this.email = email;
+    }
+
+    public char getActive() {
+        return active;
+    }
+
+    public void setActive(char active) {
         this.active = active;
+    }
+
+    public String getCustomCode() {
+        return customCode;
+    }
+
+    public void setCustomCode(String customCode) {
         this.customCode = customCode;
     }
-  }
-
+}

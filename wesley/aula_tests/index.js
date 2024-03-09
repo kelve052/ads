@@ -1,9 +1,20 @@
-const soma = (a, b)=>{
+const soma = (a, b) => {
     return a + b
+
 }
 
-const subritacao = (a, b) => {return a - b}
+const subritacao = (a, b) => { return a - b }
 
-console.log(soma(-2, 7))
+const divisao = (a, b) => {
+    try {
+        if (typeof(a) !== 'number' || typeof(b) !== 'number') {
+            throw new Error("Os parametros passados devem ser um numemro!")
+        }
+        return a / b
+    } catch (error) {
+        throw error
+    }
+}
 
-export {soma, subritacao}
+console.log(divisao(5, 2))
+export { soma, subritacao, divisao }

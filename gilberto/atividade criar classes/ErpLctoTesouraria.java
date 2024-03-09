@@ -1,12 +1,7 @@
-
-import java.util.*;
-import java.sql.Time;
-import java.time.LocalDateTime;
-import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.Date;
 
-class ErpLctoTesouraria {
+public class ErpLctoTesouraria {
     private int id;
     private Date dataPgto;
     private int erpFormaPagamentoId; //class
@@ -33,5 +28,101 @@ class ErpLctoTesouraria {
         this.responsavelId = responsavelId; //class
         this.erpContasPagarId = erpContasPagarId; //class
         this.erpContasReceberId = erpContasReceberId; //class
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Date getDataPgto() {
+        return dataPgto;
+    }
+
+    public void setDataPgto(Date dataPgto) {
+        this.dataPgto = dataPgto;
+    }
+
+    public int getErpFormaPagamentoId() {
+        return erpFormaPagamentoId;
+    }
+
+    public void setErpFormaPagamentoId(int erpFormaPagamentoId) {
+        this.erpFormaPagamentoId = erpFormaPagamentoId;
+    }
+
+    public int getErpLctoHistoricoId() {
+        return erpLctoHistoricoId;
+    }
+
+    public void setErpLctoHistoricoId(int erpLctoHistoricoId) {
+        this.erpLctoHistoricoId = erpLctoHistoricoId;
+    }
+
+    public int getContaDebito() {
+        return contaDebito;
+    }
+
+    public void setContaDebito(int contaDebito) {
+        this.contaDebito = contaDebito;
+    }
+
+    public int getContaCredito() {
+        return contaCredito;
+    }
+
+    public void setContaCredito(int contaCredito) {
+        this.contaCredito = contaCredito;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public Timestamp getDatetime() {
+        return datetime;
+    }
+
+    public void setDatetime(Timestamp datetime) {
+        this.datetime = datetime;
+    }
+
+    public char getActive() {
+        return active;
+    }
+
+    public void setActive(char active) {
+        this.active = active;
+    }
+
+    public int getResponsavelId() {
+        return responsavelId;
+    }
+
+    public void setResponsavelId(int responsavelId) {
+        this.responsavelId = responsavelId;
+    }
+
+    public Integer getErpContasPagarId() {
+        return erpContasPagarId;
+    }
+
+    public void setErpContasPagarId(Integer erpContasPagarId) {
+        this.erpContasPagarId = erpContasPagarId;
+    }
+
+    public Integer getErpContasReceberId() {
+        return erpContasReceberId;
+    }
+
+    public void setErpContasReceberId(Integer erpContasReceberId) {
+        this.erpContasReceberId = erpContasReceberId;
     }
 }

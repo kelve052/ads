@@ -52,68 +52,157 @@ public class SystemUsers {
         this.otpSecret = otpSecret;
     }
 
-    // Método para definir valores
-    public void setSystemUsers(int id, String name, String email, String site, String login, String password,
-            int systemUnitId, int frontpageId, String photoPath, char active, Character acceptedTermPolicy,
-            String acceptedTermPolicyAt, String acceptedTermPolicyData, String phone, String address, String about,
-            String functionName, String customCode, String otpSecret) {
+    // Métodos Get
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getSite() {
+        return site;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public int getSystemUnitId() {
+        return systemUnitId;
+    }
+
+    public int getFrontpageId() {
+        return frontpageId;
+    }
+
+    public String getPhotoPath() {
+        return photoPath;
+    }
+
+    public char getActive() {
+        return active;
+    }
+
+    public Character getAcceptedTermPolicy() {
+        return acceptedTermPolicy;
+    }
+
+    public String getAcceptedTermPolicyAt() {
+        return acceptedTermPolicyAt;
+    }
+
+    public String getAcceptedTermPolicyData() {
+        return acceptedTermPolicyData;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getAbout() {
+        return about;
+    }
+
+    public String getFunctionName() {
+        return functionName;
+    }
+
+    public String getCustomCode() {
+        return customCode;
+    }
+
+    public String getOtpSecret() {
+        return otpSecret;
+    }
+
+    // Métodos Set
+    public void setId(int id) {
         this.id = id;
+    }
+
+    public void setName(String name) {
         this.name = name;
+    }
+
+    public void setEmail(String email) {
         this.email = email;
+    }
+
+    public void setSite(String site) {
         this.site = site;
+    }
+
+    public void setLogin(String login) {
         this.login = login;
+    }
+
+    public void setPassword(String password) {
         this.password = password;
+    }
+
+    public void setSystemUnitId(int systemUnitId) {
         this.systemUnitId = systemUnitId;
+    }
+
+    public void setFrontpageId(int frontpageId) {
         this.frontpageId = frontpageId;
+    }
+
+    public void setPhotoPath(String photoPath) {
         this.photoPath = photoPath;
+    }
+
+    public void setActive(char active) {
         this.active = active;
+    }
+
+    public void setAcceptedTermPolicy(Character acceptedTermPolicy) {
         this.acceptedTermPolicy = acceptedTermPolicy;
+    }
+
+    public void setAcceptedTermPolicyAt(String acceptedTermPolicyAt) {
         this.acceptedTermPolicyAt = acceptedTermPolicyAt;
+    }
+
+    public void setAcceptedTermPolicyData(String acceptedTermPolicyData) {
         this.acceptedTermPolicyData = acceptedTermPolicyData;
+    }
+
+    public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public void setAddress(String address) {
         this.address = address;
+    }
+
+    public void setAbout(String about) {
         this.about = about;
+    }
+
+    public void setFunctionName(String functionName) {
         this.functionName = functionName;
+    }
+
+    public void setCustomCode(String customCode) {
         this.customCode = customCode;
+    }
+
+    public void setOtpSecret(String otpSecret) {
         this.otpSecret = otpSecret;
     }
-
-    // Método para retornar informações
-    public String getSystemUsers() {
-        return "Id: " + id + "\n" +
-               "Name: " + name + "\n" +
-               "Email: " + email + "\n" +
-               "Site: " + site + "\n" +
-               "Login: " + login + "\n" +
-               "Password: " + password + "\n" +
-               "SystemUnitId: " + systemUnitId + "\n" +
-               "FrontpageId: " + frontpageId + "\n" +
-               "PhotoPath: " + photoPath + "\n" +
-               "Active: " + active + "\n" +
-               "AcceptedTermPolicy: " + acceptedTermPolicy + "\n" +
-               "AcceptedTermPolicyAt: " + acceptedTermPolicyAt + "\n" +
-               "AcceptedTermPolicyData: " + acceptedTermPolicyData + "\n" +
-               "Phone: " + phone + "\n" +
-               "Address: " + address + "\n" +
-               "About: " + about + "\n" +
-               "FunctionName: " + functionName + "\n" +
-               "CustomCode: " + customCode + "\n" +
-               "OtpSecret: " + otpSecret;
-    }
-
-    // Método main
-
-    public SystemUsers() {
-        public static void main(String[] args) {
-            SystemUsers teste = new SystemUsers();
-            teste.setSystemUsers(1, "Nome", "email@example.com", "example.com", "login", "senha", 
-                                 1, 1, "caminhoDaFoto", 'Y', 'T', "2024-03-04", "dadosDaPolitica", 
-                                 "1234567890", "Endereço exemplo", "Sobre mim", "Função exemplo", 
-                                 "Código personalizado", "segredoOTP");
-        
-            System.out.println(teste.getSystemUsers());
-        }
-    }
- 
-    
 }

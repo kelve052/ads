@@ -1,0 +1,50 @@
+:root {
+    --azul: #0B1D26;
+    --amarelo: #FBD784;
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    align-items: center;
+    height: 50px;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.links{
+    color: var(--branco);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#div-login{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#div-login a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/*main ---------------------------------------------*/
+
+#section-inicial{
+
+}
+
+#card-follow-ista-twi{
+    display: flex;
+    justify-content: center;
+}
