@@ -1,3 +1,4 @@
+
 // import java.util.*;
 // import java.sql.Time;
 // import java.time.LocalDateTime;
@@ -9,18 +10,19 @@ public class ErpCompras {
     private int id;
     private String numero_requisicao;
     private SystemUsers membro_comprador_system_users_id; // class
-    private int erp_forma_pagamento_id;
-    private int erp_destinacao_recurso_id;
-    private int erp_cotacao_id;
+    private ErpFormaPagamento erp_forma_pagamento_id; // class
+    private ErpDestinacaoRecurso erp_destinacao_recurso_id; // class
+    private ErpCotacao erp_cotacao_id; // class
     private double valor_total;
     private Date data_compra;
-    private int erp_status_compra_id;
+    private ErpStatusCompra erp_status_compra_id; // class
     private char active;
     private Date data_lancamento;
 
     public ErpCompras(int id, String numero_requisicao, SystemUsers membro_comprador_system_users_id,
-        int erp_forma_pagamento_id, int erp_destinacao_recurso_id, int erp_cotacao_id, double valor_total,
-        Date data_compra, int erp_status_compra_id, char active, Date data_lancamento) {
+            ErpFormaPagamento erp_forma_pagamento_id, ErpDestinacaoRecurso erp_destinacao_recurso_id,
+            ErpCotacao erp_cotacao_id, double valor_total,
+            Date data_compra, ErpStatusCompra erp_status_compra_id, char active, Date data_lancamento) {
         this.id = id;
         this.numero_requisicao = numero_requisicao;
         this.membro_comprador_system_users_id = membro_comprador_system_users_id;
@@ -58,27 +60,27 @@ public class ErpCompras {
         this.membro_comprador_system_users_id = membro_comprador_system_users_id;
     }
 
-    public int getErp_forma_pagamento_id() {
+    public ErpFormaPagamento getErp_forma_pagamento_id() {
         return erp_forma_pagamento_id;
     }
 
-    public void setErp_forma_pagamento_id(int erp_forma_pagamento_id) {
+    public void setErp_forma_pagamento_id(ErpFormaPagamento erp_forma_pagamento_id) {
         this.erp_forma_pagamento_id = erp_forma_pagamento_id;
     }
 
-    public int getErp_destinacao_recurso_id() {
+    public ErpDestinacaoRecurso getErp_destinacao_recurso_id() {
         return erp_destinacao_recurso_id;
     }
 
-    public void setErp_destinacao_recurso_id(int erp_destinacao_recurso_id) {
+    public void setErp_destinacao_recurso_id(ErpDestinacaoRecurso erp_destinacao_recurso_id) {
         this.erp_destinacao_recurso_id = erp_destinacao_recurso_id;
     }
 
-    public int getErp_cotacao_id() {
+    public ErpCotacao getErp_cotacao_id() {
         return erp_cotacao_id;
     }
 
-    public void setErp_cotacao_id(int erp_cotacao_id) {
+    public void setErp_cotacao_id(ErpCotacao erp_cotacao_id) {
         this.erp_cotacao_id = erp_cotacao_id;
     }
 
@@ -98,11 +100,11 @@ public class ErpCompras {
         this.data_compra = data_compra;
     }
 
-    public int getErp_status_compra_id() {
+    public ErpStatusCompra getErp_status_compra_id() {
         return erp_status_compra_id;
     }
 
-    public void setErp_status_compra_id(int erp_status_compra_id) {
+    public void setErp_status_compra_id(ErpStatusCompra erp_status_compra_id) {
         this.erp_status_compra_id = erp_status_compra_id;
     }
 
