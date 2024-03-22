@@ -1,0 +1,41 @@
+:root{
+  --cor1: background: #253237;
+  --cor2: background: #949494;
+  --cor3: background: #C4C4C4;
+  --cor4: background: #F1F1F1;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 120px;
+  align-items: center;
+  background: #F1F1F1;
+}
+.logo{
+  width: 160px;
+height: 66.341px;
+}
+.link{
+
+  text-decoration: none;
+  color: black;
+  margin: 32px;
+}
+
+
+#baner{
+ margin: auto;
+ display: block;
+ margin-top: 71px;
+}
+
+main{
+  padding: 0 192px;
+}
