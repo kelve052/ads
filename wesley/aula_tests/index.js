@@ -16,5 +16,9 @@ const divisao = (a, b) => {
     }
 }
 
+const media = (a, b, c) =>{
+    return (a + b + c) / 3
+}
+
 console.log(divisao(5, 2))
-export { soma, subritacao, divisao }
+export { soma, subritacao, divisao, media }

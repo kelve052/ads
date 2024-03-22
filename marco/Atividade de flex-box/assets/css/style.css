@@ -132,6 +132,7 @@ nav {
     height: 44px;
     border-radius: 0 0 20px 20px;
     border: none;
+    cursor: pointer;
 }
 
 footer {
