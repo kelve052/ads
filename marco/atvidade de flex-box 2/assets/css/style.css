@@ -1,41 +1,235 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
   --cor1: background: #253237;
   --cor2: background: #949494;
   --cor3: background: #C4C4C4;
   --cor4: background: #F1F1F1;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
+  font-family: "Montserrat";
 }
 
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   padding: 12px 120px;
   align-items: center;
   background: #F1F1F1;
 }
-.logo{
+
+.logo {
   width: 160px;
-height: 66.341px;
+  height: 66.341px;
 }
-.link{
+
+.link {
 
   text-decoration: none;
   color: black;
   margin: 32px;
 }
 
-
-#baner{
- margin: auto;
- display: block;
- margin-top: 71px;
-}
-
-main{
+main {
   padding: 0 192px;
 }
+
+#baner {
+  margin: auto;
+  display: block;
+  margin-top: 71px;
+  width: 100%;
+}
+
+.h1-pag {
+  color: #333;
+  font-family: "Josefin Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.paragrafo-default {
+  color: rgba(51, 51, 51, 0.70);
+  margin-top: 25px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#div-barras {
+  display: flex;
+  justify-content: space-between;
+  margin: 62px 0;
+}
+
+.barra {
+  background-color: rgba(196, 196, 196, 0.2);
+  border-radius: 5px;
+  width: 263px;
+  height: 5px;
+}
+
+.barra:first-child {
+  background-color: rgba(196, 196, 196, 1);
+}
+
+.div-bloco-de-imagens {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.card-img-texto {
+  width: 400px;
+}
+
+.h3-card {
+  color: #333;
+  font-family: "Josefin Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 12px;
+  margin-bottom: -10px;
+}
+
+
+.p-data-card {
+  margin-top: 8px;
+  color: rgba(51, 51, 51, 0.70);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* section 2 */
+
+
+#h2-cultura-vilhena {
+  color: #333;
+  font-family: "Josefin Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  margin: 100px 0 50px 0;
+}
+
+.div-bloco-de-imagens-secao2 {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  row-gap: 12px;
+  flex-wrap: wrap;
+}
+
+.card-sesao2 {
+  width: 380px;
+  height: 170px;
+  position: relative;
+}
+
+.img-sesao2 {
+  position: absolute;
+  width: 380px;
+  height: 170px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.p-card-sesao2 {
+  position: absolute;
+  bottom: 0;
+  padding: 12px;
+  color: #FBFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Josefin Sans";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* footer */
+
+footer {
+  height: 500px;
+  background: #253237;
+  box-shadow: 0px -5px 5px 0px rgba(37, 50, 55, 0.15);
+  margin-top: 154px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 120px;
+  gap: 32px;
+}
+
+.section1-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-footer {
+  color: #9DB4C0;
+  font-family: "Josefin Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 53px 0 14px 0;
+}
+
+.div-section1-icone-texto {
+  margin-bottom: 24px;
+  display: flex;
+  gap: 20px;
+}
+
+.icone {
+  width: 24px;
+  height: 24px;
+}
+
+.paragrafos-icones {
+  color: #FBFFFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.icone2 {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.section2-footer {
+  margin-right: 200px;
+}
+#div-logo-fslab-ifro{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 300px;
+  gap: 80px;
+  margin-bottom: 48px;
+}
+.logo-fslab {}
+
+.logo-ifro {}
+
+.logo-vilhena {}
