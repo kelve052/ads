@@ -37,45 +37,7 @@ header {
 /* main */
 
 main{
-  max-width: 1188px;
-  margin: auto;
-  padding: 12px;
 }
-
-.titulo{
-  margin-top: 36px;
-  color: #333;
-  font-family: "Josefin Sans";
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-.paragrafo{
-  color: rgba(51, 51, 51, 0.70);
-  text-align: justify;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
-.bloco-de-fotos1{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.bloco-de-fotos2{
-  margin: 36px 0;
-}
-
-.bloco-de-fotos2 img{
-  margin-bottom: 16px;
-  width: 100%;
-}
-
-
 
 
 
