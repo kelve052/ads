@@ -36,12 +36,148 @@ header {
 
 /* main */
 
-main{
+main {
+  margin: auto;
+  max-width: 1200px;
+}
+
+.h1-resultado-busca {
+  color: #333;
+  font-family: "Josefin Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.div-pesquisar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.barra-pesquisa {
+  width: 997px;
+  height: 37px;
+  padding-left: 10px;
+
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 
 
+.botao-buscar {
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  background: #333;
+  width: 203px;
+  height: 41px;
 
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+
+.paragrafos-default {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.div-card-global {
+  padding: 1px;
+}
+
+.linha-card {
+  margin: 36px 0;
+}
+
+.card {
+  display: flex;
+  justify-content: left;
+  gap: 22PX;
+}
+
+.div-card-textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img-card {
+  width: 100%;
+}
+
+.p-1-card {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.h2-card {
+  color: #333;
+  font-family: "Josefin Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.paragrafo-card,
+.data-card {
+  color: rgba(51, 51, 51, 0.70);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.section-botoes-pages{
+  margin-top: 50px;
+}
+
+.botao-page {
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid #2E2D2D;
+  background-color: var(--cor4);
+
+  color: #2E2D2D;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.botao-page-selecionado {
+  background-color: #2E2D2D;
+  color: #F1F1F1;
+}
 
 
 /* footer */
@@ -101,7 +237,8 @@ footer {
 .section2-footer {
   margin-right: 200px;
 }
-#div-logo-fslab-ifro{
+
+#div-logo-fslab-ifro {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
