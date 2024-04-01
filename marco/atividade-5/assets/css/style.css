@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cor-vermelho: #C0392B;
+    --cor-branco: #fff;
+    --cor-preto: #000;
+    --cor-cinza: #CECECE;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat";
+}
+
+header {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 50px;
+    background-color: var(--cor-preto);
+}
+
+#logo {
+    margin-left: 120px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 34px;
+}
+
+.links-cabessalho {
+    color: var(--cor-cinza);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.links-cabessalho:hover {
+    color: var(--cor-vermelho);
+}
+
+/* main */
+
+
+.section-baner {
+    height: 397px;
+    background-image: url("/assets/images/baner.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.div-pesquisar {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 34px;
+}
+
+.barra-pesquisa {
+    width: 933px;
+    height: 38px;
+    padding-left: 10px;
+    outline: none;
+
+
+    font-family: Quicksand;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #000;
+}
+
+.h1-seja-bem-vndo {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42.19px;
+
+}
+
+.p-baner {
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25.78px;
+    margin-bottom: 34px;
+    margin-top: 8px;
+}
+
+.botao-buscar {
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    background-color: var(--cor-vermelho);
+    width: 153px;
+    height: 41px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.section-lista-series {
+    max-width: 1260px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    row-gap: 35px;
+    flex-wrap: wrap;
+}
+
+.card-series {
+    height: 375px;
+    width: 210px;
+}
+
+.title-serie-card {
+    height: 70px;
+    font-family: Quicksand;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27.5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 8px;
+}
+
+.img-card {
+    width: 209px;
+    height: 300px;
+    border-radius: 5px 0px 0px 0px;
+    cursor: pointer;
+}
+
+.img-card:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+
+.section-botoes-pages {
+
+
+    max-width: 1260px;
+    margin: 50px auto;
+    margin-top: 50px;
+}
+
+.botao-page {
+    width: 36px;
+    height: 36px;
+    margin: 3px;
+    border: 1px solid var(--cor-preto);
+
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.botao-page-selecionado {
+    background-color: #c03a2bb9;
+    border: 1px solid var(--cor-vermelho);
+    color: #F1F1F1;
+}
+
+
+/* footer */
+
+
+footer {
+    display: flex;
+    background-color: var(--cor-preto);
+    height: 222px;
+
+}
+
+.section-global-foooter {
+
+    width: 1000px;
+    margin: 24px 121px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-receba-novidades {
+    color: var(--cor-branco);
+    font-family: Quicksand;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.div-barra-pesquisa-botao {
+    display: flex;
+    align-items: center;
+}
+
+.barrra-pesquisa-footer {
+    outline: none;
+    font-family: Quicksand;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 8px;
+    width: 270px;
+    height: 33px;
+}
+
+.botao-footer {
+    width: 50px;
+    height: 37px;
+    background-color: var(--cor-vermelho);
+    border: none;
+    border-radius: 0 5px 5px 0;
+
+    color: var(--cor-branco);
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section-links-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: self-start;
+}
+.links-footer {
+    color: var(--cor-branco);
+    text-decoration: none;
+text-align: center;
+font-family: Quicksand;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.links-footer:hover{
+    color: var(--cor-vermelho);
+}
