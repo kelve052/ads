@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cor-vermelho: #C0392B;
+    --cor-branco: #fff;
+    --cor-preto: #000;
+    --cor-cinza: #CECECE;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat";
+}
+
+header {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 50px;
+    background-color: var(--cor-preto);
+}
+
+#logo {
+    margin-left: 120px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 34px;
+}
+
+.links-cabessalho {
+    color: var(--cor-cinza);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.links-cabessalho:hover {
+    color: var(--cor-vermelho);
+}
+
+/* main */
+
+.section {
+    display: flex;
+    padding: 54px 122px;
+    gap: 20px;
+    align-items: start;
+}
+
+.div-h1-informações-da-serie {}
+
+.h1-p-teporadas {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.titulo-serie {
+    color: #000;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.p-temporada {
+    color: #000;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 187.5% */
+}
+
+.div-tipo-classificaco-idade {
+    display: flex;
+    gap: 16px;
+}
+
+.p-classificacao-idade {
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Quicksand;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 250% */
+
+    border: 0.2px solid var(--cor-preto);
+    width: 32px;
+    height: 24px;
+}
+
+.tipo-serie {
+    color: #000;
+    text-align: center;
+    font-family: "Quicksand";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 250% */
+}
+
+
+
+.descricao-serie {
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 214.286% */
+    max-width: 742px;
+    margin-top: 57px;
+}
+
+.p-idioma {
+    margin-top: 24px;
+    color: #000;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 187.5% */
+}
+
+.negrito {
+    font-weight: bold;
+    font-family: Quicksand;
+}
+
+.p-avaliacao-usuario {
+    margin: 24px 0;
+    margin-bottom: 12 px;
+    color: #000;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 187.5% */
+}
+
+.div-avalicao {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.barra-de-avaliacao {
+    width: 278px;
+    height: 9px;
+    background-color: #c4c4c49a;
+}
+
+.barra-avaliacao-cheia {
+    width: 245px;
+    height: 9px;
+    display: block;
+    background-color: #21D07A;
+}
+
+.porcentagen-avaliacao {
+
+    color: #000;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 115.385% */
+}
+
+.palavra-chave {
+    border-radius: 5px;
+    background-color: #C4C4C4;
+    height: 25px;
+
+    color: #000;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 250% */
+}

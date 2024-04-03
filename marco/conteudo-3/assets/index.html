@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Formulario</h1>
+
+        <form class="formulario" action="enviar" method="post">
+            <div class="div-elementos">
+                <label for="nome">Nome: </label>
+                <input placeholder="Ex: Eu sou o batman" type="text" name="nome" id="nome">
+            </div>
+            <div class="div-elementos">
+                <label for="matricula">Matricula: </label>
+                <input placeholder="2023154875265" type="number" name="matricula" id="matricula">
+            </div>
+            <div class="div-elementos">
+                <label for="nascimento">Data de nascimento: </label>
+                <input placeholder="21/05/2000" type="date" name="nascimento" id="nascimento">
+            </div>
+            <div>
+                <input type="radio" name="sexo" id="feminino">
+                <label for="feminino" id="feminino">Feminino</label>
+                <input type="radio" name="sexo" id="masculino">
+                <label for="masculino" id="masculino">Masculino</label>
+            </div>
+            <div class="div-obeservacao">
+                <label for="obs">Obiservação: </label>
+                <textarea name="obs" id="obs" cols="30" rows="10">Escreva aqui suas observações!</textarea>
+            </div>
+            <div class="div-selects">
+                <label for="">Tuma: </label>
+                <select name="" id="">
+                    <option value="a1">A1</option>
+                    <option value="a2">A2</option>
+                    <option value="b1">B1</option>
+                    <option value="b2">B2</option>
+                </select>
+            </div>
+            <div class="">
+                <input type="checkbox" id="termos" name="termos">
+                <label for="termos">Li e concordo com os termos</label>
+            </div>
+            <div class="div-botao">
+                <input class="botao" type="button" value="Cadastrar">
+            </div>
+            
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
