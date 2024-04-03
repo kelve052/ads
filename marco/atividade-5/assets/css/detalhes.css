@@ -55,6 +55,9 @@ header {
     padding: 54px 122px;
     gap: 20px;
     align-items: start;
+    background: linear-gradient(184deg, rgba(255, 255, 255, 0.644) 28%, rgba(255, 255, 255, 0.726) 95%), url("/assets/images/senas\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .div-h1-informações-da-serie {}
@@ -192,10 +195,37 @@ header {
     /* 115.385% */
 }
 
+.div-palavras-cheves-e-p {
+    display: flex;
+    margin-top: 47px;
+    gap: 22px;
+}
+
+.p-palavra-chave {
+    color: #000;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 187.5% */
+}
+
+.div-de-palavras-chaves {
+    display: flex;
+    max-width: 650px;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
 .palavra-chave {
     border-radius: 5px;
     background-color: #C4C4C4;
     height: 25px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     color: #000;
     text-align: center;
@@ -205,4 +235,19 @@ header {
     font-weight: 400;
     line-height: 30px;
     /* 250% */
+}
+
+.p-onde-assistir{
+    margin-bottom: 24px;
+
+    color: #000;
+font-family: Quicksand;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 187.5% */
+}
+
+.div-netflix-antena img{
+    margin-right: 30px;
 }
