@@ -55,6 +55,9 @@ header {
     padding: 54px 122px;
     gap: 20px;
     align-items: start;
+}
+
+.section-1 {
     background: linear-gradient(184deg, rgba(255, 255, 255, 0.644) 28%, rgba(255, 255, 255, 0.726) 95%), url("/assets/images/senas\ \(1\).png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -237,17 +240,179 @@ header {
     /* 250% */
 }
 
-.p-onde-assistir{
+.p-onde-assistir {
     margin-bottom: 24px;
 
     color: #000;
-font-family: Quicksand;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 30px; /* 187.5% */
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 187.5% */
 }
 
-.div-netflix-antena img{
+.div-netflix-antena img {
     margin-right: 30px;
+}
+
+
+
+/* segunda section */
+
+.section-2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.h3-imagens {
+    color: #000;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 107.143% */
+}
+
+.div-imagems {
+    justify-content: space-between;
+    display: flex;
+    gap: 52px;
+    flex-wrap: wrap;
+    max-width: 1250px;
+}
+
+.imgs-senas {
+    width: 364px;
+    height: 205px;
+}
+
+.div-elenco {
+    display: flex;
+    max-width: 1250px;
+    gap: 56px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    position: relative;
+
+}
+
+
+.div-elenco::-webkit-scrollbar {
+    width: 811px;
+    height: 8px;
+
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.div-elenco::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #C4C4C4;
+}
+
+.div-img-p-elenco {}
+
+.p-elenco {
+    margin-top: 8px;
+    color: #000;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.p-nome-do-ator {
+    color: #000;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* footer */
+
+
+footer {
+    margin-top: 100px;
+    display: flex;
+    background-color: var(--cor-preto);
+    height: 222px;
+
+}
+
+.section-global-foooter {
+
+    width: 1000px;
+    margin: 24px 121px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-receba-novidades {
+    color: var(--cor-branco);
+    font-family: Quicksand;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.div-barra-pesquisa-botao {
+    display: flex;
+    align-items: center;
+}
+
+.barrra-pesquisa-footer {
+    outline: none;
+    font-family: Quicksand;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 8px;
+    width: 270px;
+    height: 33px;
+}
+
+.botao-footer {
+    width: 50px;
+    height: 37px;
+    background-color: var(--cor-vermelho);
+    border: none;
+    border-radius: 0 5px 5px 0;
+
+    color: var(--cor-branco);
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section-links-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: self-start;
+}
+.links-footer {
+    color: var(--cor-branco);
+    text-decoration: none;
+text-align: center;
+font-family: Quicksand;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.links-footer:hover{
+    color: var(--cor-vermelho);
 }
