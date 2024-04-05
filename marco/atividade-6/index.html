@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="h1-inscricao">Inscrição</h1>
+    </header>
+    <main>
+        <form >
+            <div class="div-label-input div-input-geral">
+                <label class="label" for="nome">Nome: </label>
+                <input id="nome" class="input" placeholder="Ex.: Maria de Oliveira" type="text">
+            </div>
+
+            <div class="div-label-input div-input-geral">
+                <label class="label" for="email">E-mail: </label>
+                <input id="email" class="input" placeholder="Ex.: maria.oliveira@gmail.com" type="text">
+            </div>
+
+            <div class="div-input-geral">
+                <label class="label" for="sexo">Sexo: </label>
+                <div class="div-input-radio-e-label">
+                    <input class="input-radio" type="radio" id="maculino" name="sexo">
+                    <label class="label-radio" for="maculino">Maculino</label>
+                    <input class="input-radio" type="radio" name="sexo" id="feminino">
+                    <label class="label-radio" for="feminino">Feminino</label>
+                </div>
+            </div>
+
+
+            <div class="div-select div-input-geral">
+                <label class="label" for="curso">Curso: </label>
+                <select class="select" name="" id="curso">
+                    <option value="1">Html e Css</option>
+                    <option value="2">Java</option>
+                    <option value="3">Java Script</option>
+                    <option value="4">C++</option>
+                </select>
+            </div>
+
+            <div class="div-text-area div-input-geral">
+                <label class="label" for="textarea">Descreva o atendimento especial:</label>
+                <textarea name="" id="textarea" cols="" rows="5"></textarea>
+            </div>
+
+            <div class="div-termos div-input-geral">
+                <input type="checkbox" id="termos">
+                <label class="label-termos" for="termos">Estou de acordo com o termos de serviço</label>
+
+            </div>
+
+            <input class="botao" type="button" value="Realizar inscrição">
+        </form>
+    </main>
+</body>
+</html>  
