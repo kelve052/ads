@@ -36,3 +36,55 @@ describe ('Checando média',() => {
   });
 
 })
+
+
+
+
+
+
+
+
+describe('Teste do carrinho', () => {
+  it("Deve inicializar o valor vazio", ()=>{
+
+  })
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

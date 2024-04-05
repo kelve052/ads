@@ -1,0 +1,10 @@
+# servidor
+PORT=3051
+
+# banco de dados
+DATABASE_URL="mysql://turma2023:fslab@edurondon.tplinkdns.com:3372/edurondon"
+DATABASE_HOST="edurondon.tplinkdns.com"
+DATABASE_PORT=3372
+DATABASE_NAME="edurondon"
+DATABASE_USER="turma2023"
+DATABASE_PASSWORD="fslab"

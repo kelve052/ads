@@ -1,0 +1,52 @@
+// schema.prisma
+
+// Define o provedor de banco de dados. Neste exemplo, estamos usando MySQL.
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// Define os modelos correspondentes às tabelas do banco de dados.
+model Cliente {
+  id       Int      @id @default(autoincrement())
+  nome     String
+  email    String
+  telefone String
+
+  // Define a relação entre Cliente e Pedido.
+  pedidos  Pedido[]
+}
+
+model Produto {
+  id    Int     @id @default(autoincrement())
+  nome  String
+  preco Float   // Corrigido para Float
+
+  // Define a relação entre Produto e ItemPedido.
+  itensPedidos ItemPedido[]
+}
+
+model Pedido {
+  id         Int       @id @default(autoincrement())
+  cliente_id Int
+  data_pedido DateTime @default(now())
+
+  // Define a relação entre Pedido e Cliente.
+  cliente    Cliente   @relation(fields: [cliente_id], references: [id])
+
+  // Define a relação entre Pedido e ItemPedido.
+  itensPedidos ItemPedido[]
+}
+
+model ItemPedido {
+  id         Int      @id @default(autoincrement())
+  pedido_id  Int
+  produto_id Int
+  quantidade Int
+
+  // Define a relação entre ItemPedido e Pedido.
+  pedido    Pedido   @relation(fields: [pedido_id], references: [id])
+
+  // Define a relação entre ItemPedido e Produto.
+  produto   Produto  @relation(fields: [produto_id], references: [id])
+}
