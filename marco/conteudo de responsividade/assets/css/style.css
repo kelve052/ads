@@ -1,0 +1,42 @@
+:root{
+    --cor-1: blueviolet;
+    --cor-2: white;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.ul-menu{
+    display: flex;
+    background-color: var(--cor-1);
+     
+}
+
+@media (max-width: 600px) {
+    .ul-menu{
+        flex-direction: column;
+    }
+}
+.ul-menu li{
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.ul-menu li a{
+    text-decoration: none;
+    color: var(--cor-2);
+}
+
+.ul-menu li:hover{
+    background-color: var(--cor-2);
+    color: var(--cor-1);
+    transition: .1s;
+}
+
+.ul-menu li:hover a{
+    color: var(--cor-1);
+}

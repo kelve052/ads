@@ -85,6 +85,10 @@ header {
     border: 1px solid #000;
 }
 
+@media (max-width: ) {
+    
+}
+
 .h1-seja-bem-vndo {
     font-family: Roboto;
     font-size: 36px;
@@ -213,8 +217,10 @@ footer {
     font-family: Quicksand;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bolder;
     line-height: normal;
+
+    
 }
 
 .div-barra-pesquisa-botao {
