@@ -1,0 +1,125 @@
+body{
+    
+}
+
+#h1-titulo{
+    text-align: center;
+    color: crimson;
+    font-size: 36px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+#formulario{
+    background-color: cornflowerblue;
+    max-width: 400px;
+    height: 244px;
+    padding: 8px;
+    border-radius: 5px;
+    border: solid 1px rgb(27, 73, 160);
+}
+
+.div-input{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    
+}
+
+.labels{
+    
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.inputs{
+    border: solid 1px cornflowerblue;
+    padding: 8px;
+    width: 100%;
+    border-radius: 0 6px 6px 0;
+    outline: none;
+}
+.inputs:focus{
+    border: 1px solid crimson;
+    border-right: 4px solid crimson;
+}
+.inputs:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+.div-btn{
+    padding: 12px;
+}
+#btn{
+    color: #fff;
+    background-color: crimson;
+    border: none;
+    padding: 8px 48px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn:hover{
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+#btn:active{
+    background-color: chartreuse;
+}
+
+/*tabela*/
+
+#tabela{
+    border: solid 1px black;
+    width: 500px;
+    border-collapse: collapse;
+    height: 20px;
+}
+.th-titulos-cabecalho{
+    border: 1px solid;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    text-align: left;
+    padding-left: 4px;
+}
+
+.linha-de-cada-livro{
+    background-color: goldenrod;
+    border-bottom: none;
+    height: 20px;
+}
+.linha-de-cada-livro:nth-child(even){
+    background-color: floralwhite;
+}
+.linha-de-cada-livro:hover{
+    border: solid 3px crimson;
+    
+}
+.dados-livro{
+    padding-left: 4px;
+    font-family: Helvetica, serif;
+    font-weight: 400;
+    height: 20px;
+}
+
+#caixa-mensagen{
+    width: 250px;
+    background-color: rgb(166, 237, 100);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+
+    position: absolute;
+    right: 6px;
+    top: -500px;
+    transition: 0.5s;
+}

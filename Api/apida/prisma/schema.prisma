@@ -1,52 +1,45 @@
-// schema.prisma
+generator client {
+  provider = "prisma-client-js"
+}
 
-// Define o provedor de banco de dados. Neste exemplo, estamos usando MySQL.
 datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
-// Define os modelos correspondentes às tabelas do banco de dados.
-model Cliente {
-  id       Int      @id @default(autoincrement())
-  nome     String
-  email    String
-  telefone String
-
-  // Define a relação entre Cliente e Pedido.
-  pedidos  Pedido[]
+model Clientes {
+  id       Int       @id @default(autoincrement())
+  nome     String?   @db.VarChar(100)
+  email    String?   @db.VarChar(100)
+  telefone String?   @db.VarChar(20)
+  Pedidos  Pedidos[]
 }
 
-model Produto {
-  id    Int     @id @default(autoincrement())
-  nome  String
-  preco Float   // Corrigido para Float
-
-  // Define a relação entre Produto e ItemPedido.
-  itensPedidos ItemPedido[]
-}
-
-model Pedido {
+model ItensPedido {
   id         Int       @id @default(autoincrement())
-  cliente_id Int
-  data_pedido DateTime @default(now())
+  pedido_id  Int?
+  produto_id Int?
+  quantidade Int?
+  Pedidos    Pedidos?  @relation(fields: [pedido_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "ItensPedido_ibfk_1")
+  Produtos   Produtos? @relation(fields: [produto_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "ItensPedido_ibfk_2")
 
-  // Define a relação entre Pedido e Cliente.
-  cliente    Cliente   @relation(fields: [cliente_id], references: [id])
-
-  // Define a relação entre Pedido e ItemPedido.
-  itensPedidos ItemPedido[]
+  @@index([pedido_id], map: "pedido_id")
+  @@index([produto_id], map: "produto_id")
 }
 
-model ItemPedido {
-  id         Int      @id @default(autoincrement())
-  pedido_id  Int
-  produto_id Int
-  quantidade Int
+model Pedidos {
+  id          Int           @id @default(autoincrement())
+  cliente_id  Int?
+  data_pedido DateTime?     @db.Date
+  ItensPedido ItensPedido[]
+  Clientes    Clientes?     @relation(fields: [cliente_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "Pedidos_ibfk_1")
 
-  // Define a relação entre ItemPedido e Pedido.
-  pedido    Pedido   @relation(fields: [pedido_id], references: [id])
+  @@index([cliente_id], map: "cliente_id")
+}
 
-  // Define a relação entre ItemPedido e Produto.
-  produto   Produto  @relation(fields: [produto_id], references: [id])
+model Produtos {
+  id          Int           @id @default(autoincrement())
+  nome        String?       @db.VarChar(100)
+  pre_o       Decimal?      @map("preço") @db.Decimal(10, 2)
+  ItensPedido ItensPedido[]
 }

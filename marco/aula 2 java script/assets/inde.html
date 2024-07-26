@@ -7,23 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="">
-        <div>
-            <label for="titulo">Titulo: </label>
-            <input id="titulo" type="text">
-        </div>
-        <div>
-            <label for="autor">autor: </label>
-            <input id="autor" type="text">
-        </div>
-        <div>
-            <label for="ano">ano: </label>
-            <input id="ano" type="number">
-        </div>
-        <div>
-            <input type="submit" value="Adicionar" id="btn">
-        </div>
-    </form>
+    <header>
+        <h1 id="h1-titulo">Sistema de Cadastro de Livros</h1>
+    </header>
+    <main>
+        <form id="formulario" action="">
+            <div class="div-input">
+                <label class="labels" for="titulo">Titulo: </label>
+                <input id="titulo" type="text" class="inputs">
+            </div>
+            <div class="div-input">
+                <label class="labels" for="autor">Autor: </label>
+                <input id="autor" type="text" class="inputs">
+            </div>
+            <div class="div-input">
+                <label class="labels" for="ano">Ano: </label>
+                <input id="ano" type="number" class="inputs">
+            </div>
+            <div class="div-btn">
+                <input type="submit" value="Adicionar" id="btn">
+            </div>
+        </form>
+        <table id="tabela">
+            <thead>
+                <th class="th-titulos-cabecalho">Titulo</th>
+                <th class="th-titulos-cabecalho">Autor</th>
+                <th class="th-titulos-cabecalho">Ano</th>
+            </thead>
+            <tbody id="body-table">
+                <!-- aqui o java script insere os livros -->
+            </tbody>
+        </table>
+        <div id="caixa-mensagen"><p>Livro adicionado com sucesso!</p></div>
+    </main>
 
     <script src="script.js"></script>
     <script src="script2.js"></script>
