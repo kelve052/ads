@@ -24,15 +24,14 @@ const setLivros = () => {
 
 let livros = []
 const deletarLivros = (index) => {
-  const livroDeletar = document.getElementsByClassName(`linha-de-cada-livro${livros[index].id}`)[0]
-  console.log(livroDeletar)
+  const livroDeletar = document.getElementById(`${index}`)
   livroDeletar.style.transform = 'scale(0)'
   contador--
-  console.log(index)
-  console.log(livros[index])
-  livros.splice(index, 1)
+  setTimeout(() => {
+    livros.splice(index, 1)
   renderizarLivros(true)
   setLivros()
+  }, 700);
 }
 getLivros()
 const addLivro = (titulo, autor, ano) => {
@@ -72,6 +71,7 @@ const addLivro = (titulo, autor, ano) => {
     tdAno.appendChild(img)
 
     linhaDeCadaLivro.className = `linha-de-cada-livro linha-de-cada-livro${img.id}`
+    linhaDeCadaLivro.id = img.id
 
     tabela.appendChild(linhaDeCadaLivro)
     setTimeout(() => {
@@ -132,6 +132,7 @@ const renderizarLivros = (relold = false) => {
     tdAno.appendChild(img)
 
     linhaDeCadaLivro.className = `linha-de-cada-livro linha-de-cada-livro${img.id}`
+    linhaDeCadaLivro.id = img.id
     if (!relold) {
       setTimeout(() => {
         linhaDeCadaLivro.style.transform = 'scale(1)'
