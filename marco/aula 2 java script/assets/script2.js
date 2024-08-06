@@ -144,7 +144,4 @@ const renderizarLivros = (relold = false) => {
     tabela.appendChild(linhaDeCadaLivro)
   })
 }
-
-
-
 renderizarLivros()
