@@ -13,6 +13,5 @@ public class ListaEncadeada {
           if(tamanho == 0){
                return null;
           }
-          for()
-      }
+     }
 }
