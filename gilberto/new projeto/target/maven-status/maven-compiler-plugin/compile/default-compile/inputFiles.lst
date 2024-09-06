@@ -1,0 +1,11 @@
+/home/kelve/ads/gilberto/new projeto/src/main/java/com/project/repository/UserRepository.java
+/home/kelve/ads/gilberto/new projeto/src/main/java/com/project/security/JwtUtil.java
+/home/kelve/ads/gilberto/new projeto/src/main/java/com/project/security/SecurityConfig.java
+/home/kelve/ads/gilberto/new projeto/src/main/java/com/project/model/User.java
+/home/kelve/ads/gilberto/new projeto/src/main/java/com/project/ Application.java
+/home/kelve/ads/gilberto/new projeto/src/main/java/com/project/client/ApiClient.java
+/home/kelve/ads/gilberto/new projeto/src/main/java/com/project/util/DateUtil.java
+/home/kelve/ads/gilberto/new projeto/src/main/java/com/project/UserServices/UserService.java
+/home/kelve/ads/gilberto/new projeto/src/main/java/com/project/controller/UserController.java
+/home/kelve/ads/gilberto/new projeto/src/main/java/com/project/middleware/LoggingInterceptor.java
+/home/kelve/ads/gilberto/new projeto/src/main/java/com/project/config/AppConfig.java

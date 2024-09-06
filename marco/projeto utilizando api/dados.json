@@ -1,0 +1,39 @@
+{
+  "reservas": [
+    {
+      "id": "8f5b",
+      "atividade": "",
+      "sala": "lb-informatica 1",
+      "dataInicial": "NaN/NaN/NaN",
+      "dataFinal": "NaN/NaN/NaN"
+    },
+    {
+      "id": "56d4",
+      "atividade": "",
+      "sala": "lb-informatica 1",
+      "dataInicial": "NaN/NaN/NaN",
+      "dataFinal": "NaN/NaN/NaN"
+    },
+    {
+      "id": "4677",
+      "atividade": "",
+      "sala": "lb-informatica 1",
+      "dataInicial": "NaN/NaN/NaN",
+      "dataFinal": "NaN/NaN/NaN"
+    },
+    {
+      "id": "4320",
+      "atividade": "",
+      "sala": "lb-informatica 1",
+      "dataInicial": "NaN/NaN/NaN",
+      "dataFinal": "NaN/NaN/NaN"
+    },
+    {
+      "id": "de8e",
+      "atividade": "Mudar o horario do relogio",
+      "sala": "lb-informatica 1",
+      "dataInicial": "2/8/2024",
+      "dataFinal": "2/8/2024"
+    }
+  ]
+}

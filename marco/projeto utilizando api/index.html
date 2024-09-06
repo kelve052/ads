@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva de Salas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Reserva de Salas</h1>
+  </header>
+  <main>
+    <form id="form" action="">
+      <div class="divs-inputs-labels">
+        <label class="label" for="descricao-atividade">Descrição da Atividade: </label>
+        <input class="inputs-escrever" type="text" id="descricao-atividade">
+      </div>
+      <div class="divs-inputs-labels">
+        <label class="label" for="sala">Sala: </label>
+        <select class="select" name="" id="sala">
+          <option class="option" value="lb-informatica 1">laboratório de Informática 1</option>
+          <option class="option" value="lb-informatica 2">laboratório de Informática 2</option>
+          <option class="option" value="lb-informatica 3">laboratório de Informática 3</option>
+        </select>
+      </div>
+      <div class="divs-inputs-labels">
+        <label class="label" for="data-inicial">Data Inicial: </label>
+        <input class="inputs-escrever" type="datetime-local" id="data-inicial">
+      </div>
+      <div class="divs-inputs-labels">
+        <label class="label" for="data-final">Data Final: </label>
+        <input class="inputs-escrever" type="datetime-local" id="data-final">
+      </div>
+      <div>
+        <input type="button" value="Reservar" id="botao-reservar">
+      </div>
+    </form>
+    <section id="section-table">
+     
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

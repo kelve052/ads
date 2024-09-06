@@ -10,7 +10,7 @@ public class ApiClient {
     @Autowired
     private RestTemplate restTemplate;
 
-    private final String baseUrl = "http://localhost:3000/formapagamento";
+    private final String baseUrl = "http://localhost:3051/formapagamento";
 
     public String listarFormasPagamento() {
         return restTemplate.getForObject(baseUrl, String.class);

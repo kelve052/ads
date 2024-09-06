@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    /* animation: gradientLine 2s infinite linear; */
+    transition: 1s;
+}
+
+@keyframes gradientLine {
+    0% {
+        background: linear-gradient(45deg, blueviolet, black);
+        background-size: 400% 100%;
+        background-position: 45deg;
+        transition: 1s;
+    }
+
+    25% {
+        background: linear-gradient(45deg, rgb(0, 0, 0), blueviolet);
+        background-size: 400% 100%;
+        background-position: 45deg;
+        transition: 1s;
+    }
+
+    50% {
+        background: linear-gradient(45deg, blueviolet, black);
+        background-size: 400% 400%;
+        background-position: 45deg;
+        transition: 1s;
+    }
+
+    100% {
+        background: linear-gradient(45deg, rgb(0, 0, 0), blueviolet);
+        background-size: 400% 400%;
+        background-position: 45deg;
+        transition: 1s;
+    }
+}
+
+h1 {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    background-image: linear-gradient(45deg, orange, blueviolet);
+    margin-bottom: 8px;
+}
+
+#form {
+    box-shadow: 0px 0px 30px blueviolet;
+    width: 430px;
+    margin-left: 16px;
+    padding: 16px;
+}
+
+.label {
+    color: orange;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.divs-inputs-labels {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    gap: 8px;
+    margin: 4px;
+}
+
+.inputs-escrever {
+    background-color: transparent;
+    border: orange 1px solid;
+    width: 200px;
+    border-radius: 5px;
+    height: 24px;
+    outline: none;
+    color: white;
+}
+
+#botao-reservar {
+    width: 200px;
+    height: 40px;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+}
+
+#botao-reservar:hover {
+    transition: 0.25s;
+    text-shadow: 1px 1px blueviolet;
+    border: blueviolet 2px solid;
+    width: 300px;
+}
+
+.select {
+    background-color: transparent;
+    border: orange 1px solid;
+    width: 200px;
+    border-radius: 5px;
+    height: 24px;
+    outline: none;
+    color: white;
+}
+
+.option {
+    color: orange;
+    background-color: black;
+}
+
+#tabela {
+    margin: 24px 16px;
+    box-shadow: 0px 0px 30px rgba(255, 166, 0, 0.473);
+    width: 462px;
+}
+
+.titulo-tabela {
+    color: orange;
+    border: 1px solid blueviolet;
+    padding: 4px;
+
+}
+
+.td {
+    border: 1px solid blueviolet;
+    color: white;
+    padding: 4px;
+}
+
+.linha:nth-child(even) {
+    padding: 4px;
+    border: 1px solid orange;
+    color: white;
+    background-color: gray;
+}
